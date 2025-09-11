@@ -7,8 +7,8 @@ class forms {
   <div class="card shadow-lg p-4 rounded-4" style="width: 420px;">
     <h3 class="text-center mb-4 text-primary fw-bold">Create an Account</h3>
     <form>
-      <!-- Name -->
-      <div class="mb-3">
+      
+        <div class="mb-3">
         <label for="signupName" class="form-label">Full Name</label>
         <div class="input-group">
           <span class="input-group-text bg-primary text-white"><i class="bi bi-person-fill"></i></span>
@@ -16,7 +16,7 @@ class forms {
         </div>
       </div>
 
-      <!-- Email -->
+      
       <div class="mb-3">
         <label for="signupEmail" class="form-label">Email Address</label>
         <div class="input-group">
