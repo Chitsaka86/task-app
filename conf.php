@@ -8,6 +8,7 @@ $conf['site_email'] = 'adminwings@academy.com';
 $conf['site_email_name'] = 'Academy Wings Admin';
 
 $conf['site_lang'] = 'en';
+require_once_DIR__. '/Lang/'.$conf['site_lang'].'.php';
 
 $conf['db_type'] ='pdo';
 

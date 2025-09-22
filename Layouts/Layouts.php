@@ -124,4 +124,6 @@ class Layouts {
 </html>
 <?php
     }
+    
 }
+

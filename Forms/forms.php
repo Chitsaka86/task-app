@@ -53,7 +53,7 @@ class forms {
 <?php
     }
 
-    // 🔹 SIGN IN FORM
+    // SIGN IN FORM
     public function signin() {
 ?>
 <div class="container d-flex justify-content-center align-items-center" style="min-height:100vh;">
@@ -97,7 +97,7 @@ class forms {
 <?php
     }
 
-    // 🔹 SUBMIT BUTTON
+    //  SUBMIT BUTTON
     private function submit_button($value, $name) {
 ?>
         <button type='submit' class="btn btn-primary rounded-pill fw-bold py-2 w-100" name='<?php echo $name; ?>'>
