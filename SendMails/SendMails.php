@@ -9,7 +9,7 @@ class SendMails {
         $mail = new PHPMailer(true);
         try {
             //Server settings
-            $mail->SMTPDebug = SMTP::DEBUG_OFF; 
+            $mail->SMTPDebug = SMTP::DEBUG_SERVER; 
             $mail->isSMTP();
             $mail->Host       = $conf['smtp_host'];
             $mail->SMTPAuth   = true;

@@ -17,14 +17,24 @@ $conf['db_type'] ='pdo';
 
 $conf['db_host'] = 'localhost'; 
 $conf['db_user'] = 'root';
-$conf['db_pass'] = '';
-$conf['db_name'] = 'icsb';
+$conf['db_pass'] = 'michelle';
+$conf['db_name'] = 'taskapp';
+
+try {
+    $dsn = "mysql:host=localhost;port=3307;dbname=" . $conf['db_host'] . ";dbname=" . $conf['db_name'] . ";charset=utf8mb4";
+    $pdo = new PDO($dsn, $conf['db_user'], $conf['db_pass']);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    echo "Database connected successfully.";
+} catch (PDOException $e) {
+    die("Database connection failed: " . $e->getMessage());
+}
 
 $conf['mail_type'] = 'smtp'; //mail or smtp
 $conf['smtp_host'] = 'smtp.gmail.com';
-$conf['smtp_user'] = 'icsmichelle@gmail.com';
+$conf['smtp_user'] = 'michellechitsaka6@gmail.com';
 
-$conf['smtp_pass'] = '';
+$conf['smtp_pass'] = 'michellechitsaka6@gmail.com';
 $conf['smtp_port'] = 587;
 $conf['smtp_secure'] = 'ssl'; //ssl or tls
 

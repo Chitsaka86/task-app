@@ -3,7 +3,7 @@
 require 'Classautoloader.php';
 
 $tryemail = [
-    'name_from' => 'sender',
+    'name_from' => 'Task App',
     'mail_from' => 'sender@gmail.com',
     'name_to' => 'receiver',
     'mail_to' => 'receiver@gmail.com',
@@ -11,6 +11,6 @@ $tryemail = [
     'body' => 'Welcome to ICS B <br> This is a new semester. Let\'s have fun together.',
 ];
 
-//$ObjSendEmail->sendEmail($conf,$tryemail);
+$ObjSendEmail->sendEmail($conf,$tryemail);
 
 print rand(100000, 999999);
