@@ -1,7 +1,8 @@
 <?php
 
 require __DIR__ . '/vendor/autoload.php';
-require 'conf.php';
+require __DIR__ . '/conf.php';
+
 $directories = ['Layouts', 'Forms', 'SendMails',];
 
 spl_autoload_register(function ($className) use ($directories) {

@@ -45,7 +45,7 @@ class auth{
                 $email_variables = [
                     'site_name' => $conf['site_name'],
                     'fullname' => $fullname,
-                    'activation_code' => $conf['reg_ver_code'] // This should be a real activation code
+                    'activation_code' => $conf['reg_ver_code'] 
                 ];
 
                 $mailCnt = [
@@ -59,8 +59,7 @@ class auth{
 
                 $ObjSendMail->Send_Mail($conf, $mailCnt);
 
-                // No errors, proceed with further processing (e.g., save to database)
-                // die($fullname . ' ' . $email . ' ' . $password);
+                
                 $ObjFncs->setMsg('msg', 'Signup successful! Please check your email for activation instructions.', 'success');
 
                 // Clear session data after successful signup
