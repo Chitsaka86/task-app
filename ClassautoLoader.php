@@ -18,3 +18,4 @@ spl_autoload_register(function ($className) use ($directories) {
 $ObjectSendMail = new SendMails();
 $ObjLayout = new Layouts();
 $ObjForm = new Forms();
+$ObjFncs   = new fncs();

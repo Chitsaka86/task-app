@@ -16,4 +16,8 @@ public function getMsg($name){
         return $msg;
     }
     return 'null';
+
+$ObjFncs = new fncs();
+$ObjForm = new Forms();
+}
 }

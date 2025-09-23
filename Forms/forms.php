@@ -1,9 +1,11 @@
 <?php
-class forms {
+class Forms {
     //  SIGN UP FORM
     public function signup($conf, $ObjFncs) {
-      $error= $ObjFunc->getMsg('errors');
-      print $ObjFncs->getMsg('msg')
+        if ($ObjFncs) {
+        $error = $ObjFncs->getMsg('errors'); 
+        echo $ObjFncs->getMsg('msg');
+    }
 ?>
 <div class="container d-flex justify-content-center align-items-center" style="min-height:100vh;">
   <div class="card shadow-lg p-4 rounded-4" style="width: 420px;">
@@ -54,7 +56,6 @@ class forms {
 </div>
 <?php
     }
-
     // SIGN IN FORM
     public function signin() {
 ?>

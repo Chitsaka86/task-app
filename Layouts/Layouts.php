@@ -85,16 +85,16 @@ class Layouts {
 <?php
     }
 
-    public function form_content($conf, $ObjForm) {
+    public function form_content($conf, $ObjForm, $ObjFncs) {
 ?>
          <div class="row align-items-md-stretch">
             <div class="col-md-6">
                <div class="h-100 p-5 text-bg-light rounded-3">
                   <?php 
                      if (basename($_SERVER['PHP_SELF']) == 'signup.php') { 
-                         $ObjForm->signup(); 
+                         $ObjForm->signup($conf, $ObjFncs); 
                      } else { 
-                         $ObjForm->signin(); 
+                         $ObjForm->signin($conf,$ObjForm, $ObjFncs); 
                      } 
                   ?>
                </div>
